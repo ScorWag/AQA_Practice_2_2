@@ -23,7 +23,7 @@ public class PostmanEchoTest {
 //            .log().all()
             .statusCode(200)
             .body("data", equalTo("some data"))
-            .body("args.key1", equalTo("value2"))
+            .body("args.key1", equalTo("value1"))
             .body("headers.content-type", equalTo("text/plain; charset=utf-8"))
         ;
     }
